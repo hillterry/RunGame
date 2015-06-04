@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>奔跑吧，膜女！</title>
+    <link rel="stylesheet" href="css/style.css?v=0.1.6"/>
+</head>
+<body>
+<!--首页-->
+<div class="index">
+    <div class="title">
+        <img src="images/index_title.png" alt="" width="100%"/>
+    </div>
+    <div class="girl">
+        <img src="images/girl.png" alt="" width="100%"/>
+    </div>
+    <div class="btn">
+        <a>开始游戏</a>
+    </div>
+
+</div>
+<!--首页-->
+<!--游戏-->
+
+<div class="game">
+    <div class="loading">
+        <!--<div class="l-txt">-->
+        <!--&lt;!&ndash;<canvas id="loading" width="66" height="120"></canvas>&ndash;&gt;-->
+        <!--</div>-->
+
+    </div>
+    <div class="game-body">
+        <div class="title">
+            <div class="ready" id="ready"></div>
+            <div class="ready123"  id="ready123">
+                <p class="go123 go_1"></p>
+            </div>
+
+            <div class="time">
+                <h2 id="time"><b>15.0s</b></h2>
+                <p class="metres">已跑<span id="metres">84</span>米，距离关卡<span class="level">1</span>奖励只剩<span class="surplusM">120</span>米!</p>
+            </div>
+            <div class="result">
+                <p class="name myName">name</p>
+                <p>腻害！跑了 <span id="run_metres">126</span>m</p>
+            </div>
+
+        </div>
+
+        <canvas id="myCanvas" width="1000" height="1000"></canvas>
+        <div class="button" id="button">
+            <section>
+                <p><a class="finger-l" id="finger-l" href="javascript:void(0)"><i></i></a></p>
+                <p><a class="finger-r active" id="finger-r" href="javascript:void(0)"><i></i></a></p>
+            </section>
+            <!--<button id="startAnimation">start</button>-->
+            <!--<button id="reStart">reStart</button>-->
+            <!--<button id="stopAnimation">stop</button>-->
+            <!--<button id="speedUp">speed up</button>-->
+            <!--<button id="speedDown">speed down</button>-->
+
+        </div>
+    </div>
+
+</div>
+<!--游戏-->
+
+<!--跑道页面-->
+<div class="runway-body">
+    <div class="runway-h">
+        <p><span class="title"><i class="logo"></i>| 美迪惠尔（原可莱丝）</span> <span><a href="rule.html">游戏规则</a></span></p>
+        <div class="banner">
+            <img src="images/banner.jpg" alt="" width="100%"/>
+        </div>
+
+    </div>
+    <div class="runway-container">
+        <div class="runway" id="runway">
+
+        </div>
+    </div>
+    <div class="runway-msg">
+        <!--<p><span class="name"></span>的跑道:</p>-->
+        <!--<p>你跑了<b id="myMetres">0</b>米，距离关卡<span class="level">1</span> <span id="prize"></span> 还有 <b class="surplusM">672</b> 米。</p>-->
+
+        <p class="check_runway">
+            <!--<a href="http://cn.medihealshop.com/" id="enter"  class="rotate" >进入官网</a>-->
+            <!--<a href="" id="myRunway">查看自己的跑道</a>-->
+            <!--<a href="javascript:void (0)" id="moreF" class="relay invite">继续邀请朋友</a>-->
+            <a href="prizelist.html"  id="myPrize" class="relay callF rotate">领取奖励</a>
+            <!--<a  id="creatRun">创建自己的跑道</a>-->
+            <!--<a href="javascript:void (0)" id="help">帮Ta接力</a>-->
+            <!--<a href="javascript:void (0)" id="callF" class="callF invite">邀请朋友帮忙</a>-->
+
+
+            <span class="theEnd">温馨提示：活动已结束，感谢您的支持！</span>
+        </p>
+        <div class="use">
+            <a href=""><img src="images/touch.png" alt=""/></a>
+            <p> 长按图片关注美迪惠尔中文官网微信</p>
+            <p>更多惊喜等着您！</p>
+        </div>
+        <!--<a class="again"><i></i> 再跑一次</a>-->
+    </div>
+
+    <div class="friend_list">
+        <h2><span class="line-rotate"></span>给力榜<span></span></h2>
+        <ul id="ranking">
+
+        </ul>
+    </div>
+</div>
+
+<!--跑道页面-->
+
+<!--奖品-->
+<div class="prizelist">
+    <div class="bg-shadow"></div>
+    <div class="prize">
+        <div class="prize-body">
+            <h2 class="surprise">大赞!超给力!</h2>
+            <p>恭喜你帮<span class="name">name</span>到达关卡<span class="level"></span></p>
+            <p>获得<span class="prize-desc">满499包国际邮费</span></p>
+            <img src="images/prize1.jpg" id="prize-img" alt="" width="100%"/>
+            <p><a href="javascript:void (0)" class="ctn">确认并继续</a></p>
+        </div>
+        <p class="close">
+            <span>×</span>
+        </p>
+    </div>
+</div>
+<!--奖品-->
+
+<!--分享-->
+<div class="share">
+    <img src="images/share.png" alt="" width="100%"/>
+</div>
+<!--分享-->
+
+<!--产品植入-->
+<div class="brandAdv">
+    <div class="bg-shadow"></div>
+    <div class="brandAdv-body">
+        <span class="close-btn"><img src="images/close-btn.png" alt="" width="100%"/></span>
+        <img src="images/brandAdv.png" alt="" width="100%"/>
+    </div>
+</div>
+<!--产品植入-->
+
+<audio id="audioShaking" data-src="bg.mp3" ></audio>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src='http://res.wx.qq.com/open/js/jweixin-1.0.0.js' type='text/javascript'></script>
+<script src="js/run.js?v=1.5300"></script>
+
+<script>
+    var domain = "http://m.haituncun.com/m-app/runGame/";
+    var link = "http://m.haituncun.com/m-app/runGame/index.php?parent_id=";
+    var shareVar = {
+        desc : '快来试试你的人气够不够约pao！',
+        title : '快来试试你的人气够不够约pao！',
+        imgUrl : domain + "images/banner.jpg",
+        link : link,
+        appId : '',
+        timestamp : '',
+        nonceStr : '',
+        signature : '',
+        success: function (res) {
+        }
+    }
+    var shareFVar ={}
+    $.ajax({
+        type : 'get',
+        url : domain + 'index.php?func=wechatShare',
+        dataType : 'json',
+        data : {
+            "url": window.location.href
+        },
+        async : false,
+        success : function(data) {
+            if (data) {
+                shareVar.appId = data.appId;
+                shareVar.nonceStr = data.nonceStr;
+                shareVar.timestamp = data.timestamp;
+                shareVar.signature = data.signature;
+            }
+        }
+    })
+    wx.config({
+        debug : false,
+        appId : shareVar.appId,
+        timestamp : shareVar.timestamp,
+        nonceStr : shareVar.nonceStr,
+        signature : shareVar.signature,
+        jsApiList : [ 'checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ','onMenuShareWeibo','showOptionMenu']
+    });
+    wx.ready(function() {
+        wx.showOptionMenu();
+        wx.onMenuShareAppMessage(shareFVar);
+        wx.onMenuShareTimeline(shareVar);
+        wx.onMenuShareQQ(shareVar);
+        wx.onMenuShareWeibo(shareVar);
+    });
+    wx.error(function(res) {
+        a

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" style="-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>奔跑吧，膜女！</title>
+    <link rel="stylesheet" href="css/style.css?v=1.2"/>
+    <script src="js/jquery-2.1.1.min.js"></script>
+</head>
+<body>
+<!--游戏规则-->
+<div class="rule">
+    <section>
+        <div class="bg-shadow"></div>
+        <div class=" title">
+            <h2 ></h2>
+            <p>（ 领取后查看，长按复制提示框里的优惠券码 ）</p>
+        </div>
+        <div class="prizes">
+            <div class="coupon">DEC0002d<b></b></div>
+            <ul>
+                <li>
+                    <div class="text-l"><i></i><b>关卡1：</b></div>
+                    <div class="text-r"><p>满499国际包邮<span  data-value="" class="active" data-level="1" >领取</span></p></div>
+                </li>
+
+                <li>
+                    <div class="text-l"><i></i><b>关卡2：</b></div>
+                    <div class="text-r"><p> 满399国际包邮 <span data-value="" data-level="2">领取</span></p></div>
+                </li>
+                <li>
+                    <div class="text-l"><i></i><b>关卡3：</b></div>
+                    <div class="text-r"><p>满299国际包邮<span data-value="" data-level="3">领取</span></p></div>
+                </li>
+                <li>
+                    <div class="text-l"><i></i><b>关卡4：</b></div>
+                    <div class="text-r"><p> 满199国际包邮+美迪惠尔（原可莱丝） E.G.T营养弹性睡眠面膜膏5p <em></em> <span data-level="4" data-value="DEC00022">领取</span></p></div>
+                </li>
+                <li>
+                    <div class="text-l"><i></i><b>关卡5：</b></div>
+                    <div class="text-r"><p>满199国际包邮+美迪惠尔（原可莱丝）经典水库面膜1盒（10P）<em></em><span data-level="5" data-value="" >领取</span></p></div>
+                    <div class="after"></div>
+                </li>
+                <li class="hide">
+                    <div class="text-l"><i></i><b>关卡6：</b></div>
+                    <div class="text-r"><p> 无门槛国际包邮+美迪惠尔（原可莱丝）竹炭黑眼膜1盒  <em></em><span data-level="6" data-value="DEC0002d">领取</span></p></div>
+                </li>
+                <li class="hide">
+                    <div class="text-l"><i></i><b>关卡7：</b></div>
+                    <div class="text-r"><p> 无门槛国际包邮+返现订单实付金额的50%（订单金额1000以内）  <em></em><span data-level="7" data-value="">领取</span></p></div>
+                </li>
+                <li class="hide">
+                    <div class="text-l"><i></i><b>关卡8：</b></div>
+                    <div class="text-r"><p>无门槛国际包邮+返现订单实付金额的80%（订单金额1000以内） <em></em><span data-level="8" data-value="">领取</span></p></div>
+                </li>
+                <li class="hide">
+                    <div class="text-l"><i></i><b>关卡9：</b></div>
+                    <div class="text-r"><p> 订单实付金额1500人民币以内免单  <em></em><span data-level="9" data-value="">领取</span></p></div>
+                </li>
+                <li class="hide">
+                    <div class="text-l"><i></i><b>关卡10：</b></div>
+                    <div class="text-r"><p> 火速邮件联系中文客服china@medihealshop.com，可以随意调戏，随意提要求，奖励神马的随便提。<em></em> <span data-level="10" data-value="">领取</span></p></div>
+                    <div class="after"></div>
+                </li>
+            </ul>
+        </div>
+        <div class="more"><a href="javascript:void (0)">查看全部 >></a></div>
+        <div class="use">
+            <a href=""><img src="images/touch.png" alt=""/></a>
+            <p>点击“立即使用”关注微信公众号</p>
+            <p>即可进入美迪惠尔（原可莱丝）中文官网商城</p>
+        </div>
+        <div class="logo">
+        	<a href="http://cn.medihealshop.com/">
+            <img src="images/logo-w.jpg" alt="" width="100%" />
+                <p>点击进入官网</p>
+            </a>
+        </div>
+    </section>
+</div>
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src='http://res.wx.qq.com/open/js/jweixin-1.0.0.js' type='text/javascript'></script>
+<script>
+	var domain = "http://m.haituncun.com/m-app/runGame/";
+	var link = "http://m.haituncun.com/m-app/runGame/index.php?parent_id=";
+	var shareVar = {
+		desc : '快来试试你的人气够不够约pao！',
+	    title : '快来试试你的人气够不够约pao！',
+	    imgUrl : domain + "images/banner.jpg",
+	    link : link,
+	    appId : '',
+	    timestamp : '',
+	    nonceStr : '',
+	    signature : '',
+	    success: function (res) {
+	    }
+	}
+    $.ajax({
+        type : 'get',
+        url : domain + 'index.php?func=wechatShare',
+        dataType : 'json',
+        data : {
+            "url": window.location.href
+        },
+        async : false,
+        success : function(data) {
+            if (data) {
+                shareVar.appId = data.appId;
+                shareVar.nonceStr = data.nonceStr;
+                shareVar.timestamp = data.timestamp;
+                shareVar.signature = data.signature;
+            }
+        }
+    })
+    wx.config({
+        debug : false,
+        appId : shareVar.appId,
+        timestamp : shareVar.timestamp,
+        nonceStr : shareVar.nonceStr,
+        signature : shareVar.signature,
+        jsApiList : [ 'checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ','onMenuShareWeibo', 'showOptionMenu']
+    });
+    wx.ready(function() {
+        wx.onMenuShareAppMessage(shareVar);
+        wx.onMenuShareTimeline(shareVar);
+        wx.onMenuShareQQ(shareVar);
+        wx.onMenuShareWeibo(shareVar);
+    });
+    wx.error(function(res) {
+        alert(res.errMsg);
+    });
+</script>
+
+<!--游戏规则-->
+<script>
+
+    $(function(){
+        var url = "http://m.haituncun.com/m-app/runGame/index.php?func=";
+        var ajax =$.ajax({
+            type: 'get',
+            url: url+"reward",
+            dataType:'json',
+            success: function(result){
+                if(result){
+                    setMsg(result);
+                }
+            },
+            error:function(){
+
+            }
+        })
+//        setMsg(result);
+        function setMsg(data){
+            var json = data ;
+            if(json){
+                    if(json.reward.length>0){
+                        var reward_list = json.reward;
+                        for(var i =0;i<reward_list.length;i++){
+                            var reward =reward_list[i];
+                            console.log(reward.status)
+                            if(reward.status=="1"){
+                                $(".prizes ul li:nth-child("+reward.level+") span").attr("data-value",reward.coupon);
+                                $(".prizes ul li:nth-child("+reward.level+") span").addClass("check");
+                                $(".prizes ul li:nth-child("+reward.level+") span").removeClass("active");
+                                $(".prizes ul li:nth-child("+reward.level+") span").html("查看");
+                            }else{
+                                $(".prizes ul li:nth-child("+reward.level+") span").addClass("active");
+                                $(".prizes ul li:nth-child("+reward.level+") span").html("领取");
+                            }
+                        }
+                    }
+            }
+        }
+
+        //领取优惠券
+        $(".prizes li").delegate(".active","click",function(){
+            var index =parseInt($(this).attr("data-level"));
+            var $this = $(this);
+            var ajax =$.ajax({
+                type: 'get',
+                url: url+"draw",
+                dataType:'json',
+                data: {"level":index},
+                success: function(result){
+                    if(result&&result.coupon){
+                        $this.attr("data-value",result.coupon);
+                        $this.removeClass("active");
+                        $this.html("查看");
+                        $this.addClass("check");
+                    }
+                },
+                error:function(){
+
+                }
+            })
+        })
+
+        //查看更多奖项
+        $(".more").click(function(){
+            $(".prizes li:nth-child(5) .after").hide();
+            $(".hide").show();
+            $(this).hide();
+        })
+
+        //查看优惠码
+        $(".prizes li").delegate(".check","click",function(){
+            var value = $(this).attr("data-value");
+            var top = $(this).offset().top-20;
+            var left = $(this).offset().left-109;
+            $(".coupon").html(value+"<b></b>");
+            $(".coupon").css({
+                left:left,
+                top:top
+            })
+            $(".coupon").show();
+            $(".bg-shadow").show();
+        })
+
+        $(".bg-shadow").click(function(){
+            $(".coupon").hide();
+            $(this).hide();
+        })
+
+
+    })
+    $(window).resize(function(){
+        var h = $(window).height();
+        $(".rule section").css("min-height",h-40);
+    }).resize();
+</script>
+</body>
+</html>

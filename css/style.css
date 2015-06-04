@@ -1,0 +1,1054 @@
+body,h2,p,ul,li{
+    padding: 0;
+    margin: 0;
+    font-family: "microsoft yahei", '微软雅黑', sans-serif;
+}
+
+ul,li{
+    list-style-type: none;
+}
+b{
+    color: #ff6d00;
+}
+
+*{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+
+/*首页*/
+.index{
+    background: url("../images/bg.jpg") no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    min-height: 480px;
+    display: none;
+}
+.index .btn{
+    position: absolute;
+    bottom: 40px;
+    text-align: center;
+    background: rgba(255,69,38,.3);
+    border-radius: 5px;
+    padding: 5px;
+    left: 50%;
+    margin-left: -84px;
+}
+.index .btn a{
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 30px;
+    font-family: '微软雅黑', "microsoft yahei";
+    color: #fff;
+    background: rgba(255,69,38,1);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/*跑道页面*/
+.runway-h{
+    background-color: #50008c;
+    width: 100%;
+}
+.runway-body{
+    display: none;
+}
+.runway-body .banner{
+    width: 100%;
+    max-width: 320px;
+    margin: auto;
+}
+.runway-body .runway-h p{
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    color: #fcff17;
+    width: 100%;
+}
+.runway-body .runway-h p span{
+   float: right;    
+}
+.runway-body .runway-h p span i{
+    background: url("../images/icon-p.png") no-repeat;
+    width: 65px;
+    height: 49px;
+    zoom: .6;
+    display: inline-block;
+    vertical-align: middle;
+}
+.runway-body .runway-h p span a{
+    display: inline-block;
+    border: 1px solid #fcff17;
+    border-radius: 5px;
+    padding: 1px 10px;
+    color: #fcff17;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 5px;
+    margin-top: 5px;
+    letter-spacing: 3px;
+    line-height: 20px;
+}
+.runway-body .runway-h p span.title{
+  text-align: right;
+    float: left;
+    padding:5px 3px;
+    color: #fff;
+}
+.runway-body .runway-h p span.title .logo{
+    background: url("../images/logo.jpg") no-repeat;
+    background-size: 100% auto;
+    width: 122px;
+    position: relative;
+    height: 50px;
+    display: inline-block;
+}
+.runway-body .banner img{
+    max-width: 320px;
+}
+.runway-body .runway-msg{
+    font-size: 14px;
+    font-family:"microsoft yahei", '微软雅黑', sans-serif;
+    text-align: center;
+}
+.runway-body .runway-msg p{
+    line-height: 24px;
+    padding:0 20px;
+}
+.runway-body .runway-msg p b{
+    color: #ff730c;
+}
+.runway-body .runway-msg .check_runway a{
+    min-width: 117px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-family: "microsoft yahei", '微软雅黑', sans-serif;
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #21c233;
+    line-height: 30px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+.runway-body .runway-msg .check_runway a.relay{
+    background-color: #ff730c;
+}
+.runway-body .runway-msg .check_runway a.callF{
+    background-color: #ff4747;
+}
+.runway-body .runway-msg a.again{
+    display: inline-block;
+    margin-top: 26px;
+    text-decoration: none;
+    line-height: 20px;
+    color: #21c233;
+    font-size: 18px;
+}
+.runway-body .runway-msg a.again i{
+    background: url("../images/index.png") no-repeat;
+    background-position: -621px 4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.runway-container{
+    overflow: hidden;
+}
+.runway-container .runway{
+    position: relative;
+    padding: 0 20px;
+    margin: 24px auto;
+    width: 280px;
+    line-height: 56px;
+    font-size: 0;
+}
+
+.runway-container .runway:before {
+    position: absolute;
+    display: block;
+    z-index: 2;
+    content: '起点';
+    font-size: 15px;
+    top: 3px;
+    left: 10px;
+    width: 84px;
+    height: 27px;
+    background: url(../images/index.png) 31px 0 no-repeat;
+    background-size: 320px auto;
+    line-height: 23px;
+}
+.runway ul{
+    position: relative;
+}
+.runway ul:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.runway li {
+    position: relative;
+    font-size: 10px;
+    line-height: 16px;
+    text-align: center;
+    float: left;
+    width: 40px;
+    height: 68px;
+    margin-left: 33px;
+}
+.runway li:first-child{
+    margin-left: 37px;
+}
+.runway p {
+    position: relative;
+    border-radius: 3px;
+    color: #fff;
+    z-index: 2;
+}
+
+.runway li:first-child p {
+    background-color: #ff4747;
+}
+
+.runway li p {
+    background-color: #fea00c;
+}
+
+
+.runway section {
+    position: absolute;
+    background-image: url(../images/index.png);
+    background-repeat: no-repeat;
+    background-size: 320px auto;
+}
+
+.runway .head-photo,.runway .prize{
+    position: relative;
+    left:36px;
+    z-index: 4;
+}
+.runway .king i{
+    position: absolute;
+    top: -24px;
+    left: 13px;
+    background: url("../images/king.png")no-repeat;
+    width: 51px;
+    height: 21px;
+    zoom: .5;
+}
+
+.runway-1, .runway-1-g, .runway-2, .runway-2-g, .runway-3, .runway-3-g{
+    top:15px;
+    left: 0px;
+    width: 40px;
+    height: 15px;
+    background-position: -62px 0;
+}
+
+.runway-r, .runway-r-g {
+    top: -31px;
+    left: 5px;
+    width: 86px;
+    height: 41px;
+    background-position: -116px 0;
+    background-color: #fff;
+    z-index: 2;
+    -webkit-transform: rotate(-90deg);
+}
+
+
+
+.runway-4, .runway-4-g,.runway-5, .runway-5-g, .runway-6, .runway-6-g{
+    top: 15px;
+    left: 75px;
+    width: 40px;
+    height: 15px;
+    background-position: -62px 0;
+}
+
+.runway-L, .runway-L-g {
+    top: 29px;
+    left: -230px;
+    width: 100px;
+    height: 50px;
+    background-color: #fff;
+    background-position: -104px 0;
+    -webkit-transform: rotate(90deg);
+    z-index: 2;
+}
+
+.runway-1-g, .runway-2-g, .runway-3-g,.runway-4-g, .runway-8-g, .runway-5-g, .runway-6-g, .runway-7-g {
+    background-position: -62px -15px;
+}
+
+.runway-r-g, .runway-L-g {
+    background-position: -207px 0;
+}
+
+.runway .runways-1,.runway .runways-2,.runway .runways-3{
+
+}
+
+.runway .runways-r{
+    position: absolute;
+    right: 12px;
+    top: 69px;
+}
+
+.runway .runways-L{
+    position: absolute;
+    right: 9px;
+    top: 69px;
+}
+
+ .runway .runways-4,.runway .runways-5,.runway .runways-6{
+    float: right;
+    margin-left: 0;
+    margin-right: 33px;
+}
+.runways-4 .head-photo,.runways-4 .prize ,.runways-5 .head-photo,.runways-5 .prize,.runways-6 .head-photo,.runways-6 .prize{
+    position: relative;
+    left: -39px;
+}
+.runway .runways-4{
+    margin-right: 60px;
+}
+
+.runway img {
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+}
+
+.runway span {
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    border: 2px solid #fff;
+    background: #fff;
+    color: #fff;
+    z-index: 4;
+    margin-top: -16px;
+}
+
+.runway span.runway-null:before {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    display: block;
+    content: '';
+    border: 1px dashed #515151;
+    border-radius: 30px;
+    width: 32px;
+    height: 32px;
+}
+
+.runway-final img, .runway-null img {
+    display: none
+}
+
+.runway span.runway-final {
+    margin: -4px 0 0 -4px;
+    width: 44px;
+    height: 44px;
+    background-size: 44px auto;
+}
+
+
+
+
+
+.runway-container .runway .runway-bg{
+
+}
+
+
+
+.friend_list{
+    background-color: #f2f2f2;
+    width: 90%;
+    border: 1px solid #dedede;
+    margin: 30px auto 20px;
+}
+.friend_list h2{
+    padding: 15px 0;
+    text-align: center;
+    font-weight: 400;
+}
+
+.friend_list h2 span{
+    display: inline-block;
+    background: url("../images/icon-line.png") no-repeat;
+    width: 113px;
+    height: 24px;
+    vertical-align: middle;
+    margin-left: 10px;
+    zoom: .8;
+}
+.friend_list h2 span.line-rotate{
+    -webkit-transform: rotate(180deg);
+    margin-left: 0;
+    margin-right: 10px;
+}
+.friend_list ul{
+    padding: 0px 20px;
+    font-size: 12px;
+}
+.friend_list ul li{
+    height: 50px;
+}
+.friend_list ul li:first-child .head-photo span{
+    background: #ffd50f;
+    border: 2px solid #ffd50f;
+}
+
+.friend_list ul li:first-child .head-photo span i{
+    position: absolute;
+    top: -24px;
+    left: 13px;
+    background: url("../images/king.png")no-repeat;
+    width: 51px;
+    height: 21px;
+    zoom: .5;
+}
+.friend_list ul .head-photo{
+    float: left;
+    width: 50px;
+    height: 50px;
+}
+.friend_list ul .text-r{
+    margin-left: 50px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.friend_list ul .text-r span{
+    float: right;
+    color: #9a9a9a;
+    font-size: 10px;
+}
+
+.friend_list ul .head-photo span{
+    position: relative;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+    border: 2px solid #fff;
+    background: #fff;
+    color: #fff;
+    z-index: 1;
+}
+
+.friend_list ul .head-photo span img{
+    width: 36px;
+    height: 36px;
+    border-radius: 36px;
+}
+
+/*游戏*/
+.game{
+    display: none;
+}
+.game-body{
+    display: none;
+}
+
+.button {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+.button section{
+    width: 100%;
+    font-size: 5px;
+    text-align: center;
+}
+.button section p{
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 20px 0;
+}
+.button section .finger-l{
+    background: url("../images/fingerprint.jpg") center center no-repeat #cfcfcf;
+    width: 90%;
+    background-size: 40px auto;
+    height: 58px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+}
+.button section .finger-l.active i{
+    background: url("../images/icon-finger-l.png") no-repeat;
+    width: 90%;
+    height: 98px;
+    background-size: 150px auto;
+    position: absolute;
+    left: 50%;
+    top:-17px;
+    margin-left: -75px;
+}
+.button section .finger-l.active{
+    background: url("../images/fingerprint_act-r.jpg") center center no-repeat #f0ff00;
+    background-size: 40px auto;
+}
+
+
+.button section .finger-r{
+    background: url("../images/fingerprint-r.jpg") center center no-repeat #cfcfcf;
+    width: 90%;
+    background-size: 40px auto;
+    height: 58px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 10px;
+    position: relative;
+}
+.button section .finger-r.active i{
+    background: url("../images/icon-finger-r.png") no-repeat;
+    width: 90%;
+    height: 98px;
+    background-size: 150px auto;
+    position: absolute;
+    left: 50%;
+    top:-17px;
+    margin-left: -75px;
+}
+.button section .finger-r.active{
+    background: url("../images/fingerprint_active.jpg") center center no-repeat #f0ff00;
+    background-size: 40px auto;
+}
+
+
+/*loading*/
+.loading {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 99999;
+    background: url("../images/loading.gif") no-repeat center center;
+    background-size: cover;
+}
+
+.loading .l-bg, .loading .l-bar {
+    width: 90%;
+    height: 3px;
+    background: #22252b;
+    position: absolute;
+    top: 54%;
+    left: 5%;
+}
+
+.loading .l-bar {
+    width: 0%;
+    background: #03aac9;
+    left: 0;
+    top: 0;
+    -webkit-transition: width .5s 0;
+}
+
+.loading .l-bar span {
+    background: url(images/load.png) no-repeat right center;
+    width: 25px;
+    height: 18px;
+    display: block;
+    right: -8px;
+    top: -8px;
+    position: absolute;
+}
+
+.loading .l-txt {
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    width: 100%;
+    font-size: 1rem;
+    color: #fff;
+    text-shadow: 0 3px 1px #000;
+    letter-spacing: .1rem;
+}
+
+.loading .l-txt .l-num {
+    color: #fcff00;
+}
+#myCanvas{
+    vertical-align: top;
+}
+#loading{
+    position: absolute;
+    z-index: 999999;
+    left: 50%;
+    margin-left: -33px;
+    top: 50%;
+    margin-top: -60px;
+}
+.game .title{
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    top: 20px;
+    left: 50%;
+    margin-left: -160px;
+}
+.game .title .time #time{
+    line-height: 50px;
+    text-align: center;
+    color: #fcff00;
+    text-shadow: 5px 0px 5px #9100c7,-5px 0px 5px #9100c7,0px 5px 5px #9100c7,0px -5px 5px #9100c7;
+    letter-spacing: 2px;
+    font-size: 60px;
+}
+.game .title .time{
+    width: 320px;
+    display: none;
+    position: fixed;
+    left: 50%;
+    margin-left: -160px;
+}
+.game .title .move{
+    -webkit-transition: -webkit-transform .3s;
+    -webkit-transform:translate3D(-200%,0,0);
+}
+.game .title .ready123{
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+.game .title .go123{
+    background-image: url("../images/go123.png"); display: inline-block;
+    zoom:.8;
+}
+.go_3 {background-position: -0px -0px; width: 76px; height: 115px;  }
+.go_2 {background-position: -78px -0px; width: 96px; height: 115px; }
+.go_1 {background-position: -176px -0px; width: 96px; height: 115px; }
+.go_4 {background-position: -274px -0px; width: 255px; height: 115px; }
+
+.game .title .result{
+    background-color: #a01dc6;
+    padding:10px 30px;
+    position: fixed;
+    width: 210px;
+    font-size: 20px;
+    left: 50%;
+    margin-left: -135px;
+    top:20px;
+    color: #fff;
+    -webkit-transition:-webkit-transform .3s;
+    -webkit-animation-delay: .3s;
+    -webkit-transform: translate3D(300%,0,0);
+}
+.game .title .result.moveL{
+    -webkit-transform: translate3D(0,0,0);
+}
+.game .title .time .metres{
+    color: #fff;
+    margin-top: 18px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.game .title .time .metres span{
+    font-family: arial, "宋体";
+    color: #fcff00;
+    font-weight: 600;
+}
+.game .title .ready{
+    background: url("../images/icon-ready.png") no-repeat;
+    background-size: 100% auto;
+    width: 200px;
+    height: 145px;
+    margin: auto;
+    display: none;
+}
+
+@media screen and (max-width:320px) {
+    .game .title .time .metres{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .game .title .time #time{
+        font-size: 50px;
+    }
+}
+@media screen and (min-width:321px) {
+    .game .title .time .metres{
+        font-size: 16px;
+    }
+    .game .title .time #time{
+        font-size: 60px;
+    }
+}
+
+/*规则*/
+.rule{
+    width: 100%;
+    background: #fff;
+    font-size: 12px;
+}
+.rule b{
+    font-size: 14px;
+}
+.rule section{
+    margin: 10px;
+    background: #f4f4f4;
+    padding: 10px 5px 10px 12px;
+}
+.rule section .title{
+    width: 280px;
+    margin: 0 auto  20px;
+    text-align: center;
+}
+.rule section .title h2{
+    background: url("../images/prize-title.png") no-repeat;
+    width: 329px;
+    height: 106px;
+    zoom: .5;
+    text-align: center;
+    margin: 10px auto;
+}
+.rule section .title p{
+    font-size: 12px;
+    font-weight: 600;
+}
+.rule .prizes li{
+    border-left:3px solid #ff6123;
+    line-height: 26px;
+    padding:10px 0px 10px 10px;
+    position: relative;
+
+}
+.rule .prizes li:first-child:before{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 18px;
+    background-color:#f4f4f4;
+    top: 0;
+    left: -3px;
+}
+.rule .prizes li .after{
+    position: absolute;
+    width: 10px;
+    height: 125px;
+    background-color:#f4f4f4;
+    top: 29px;
+    left: -4px;
+}
+.rule .prizes li.hide{
+     display: none;
+ }
+.rule .prizes li .text-r{
+    position: relative;
+    margin-left: 46px;
+}
+.rule .prizes li .text-l{
+  position: relative;
+  float: left;
+    margin-left: -18px;
+}
+.rule .prizes li .text-l i{
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color:#ff6123;
+    margin-top: -3px;
+    margin-right: 3px;
+}
+.rule .prizes li .text-r em{
+    width: 65px;
+    height: 1px;
+    display: inline-block;
+}
+.rule .more{
+    text-align: center;
+}
+.rule .more a{
+    text-decoration: none;
+    text-align: center;
+    color: #ff1e68;
+    padding: 10px 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+.coupon{
+    font-size: 12px;
+    height: 22px;
+    width: 109px;
+    text-align: center;
+    border: 1px solid #00aa24;
+    border-radius: 20px;
+    background-color: #fff;
+    font-style: normal;
+    color: #00aa24;
+    position: absolute;
+    line-height: 22px;
+    top: -18px;
+    display: none;
+    z-index: 9999;
+}
+
+.coupon b{
+    background: url("../images/angle.png") no-repeat;
+    width: 19px;
+    height: 13px;
+    zoom: .5;
+    position: absolute;
+    right: 13px;
+    bottom: -13px;
+}
+.rule .prizes li p span{
+    position: absolute;
+    padding: 5px 21px;
+    border-radius: 5px;
+    line-height: 14px;
+    color: #fff;
+    background-color: #b5b3b4;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+.bg-shadow{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 999;
+    display: none;
+}
+.rule .prizes li p .active{
+    background-color: #ff1e68;
+}
+.rule .prizes li p .check{
+    background-color: #04c52c;
+}
+.use{
+    text-align: center;
+    margin-top: 20px;
+}
+.use a{
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.use a img{
+    width: 260px;
+}
+.rule .rule-msg ol{
+    position: relative;
+    width: 80%;
+    margin: auto;
+    margin-left: -6px;
+    list-style-type: decimal;
+}
+.rule .rule-msg ol li{
+    padding: 5px;
+    list-style-type: decimal;
+}
+.rule .rule-msg h2{
+    background: url("../images/rule-title.png") no-repeat;
+    width: 331px;
+    height: 106px;
+    zoom:.5;
+    margin:10px auto 20px;
+}
+.rule section .title h2.myPrizes{
+    background: url("../images/game-prize.png") no-repeat;
+}
+
+.rule .logo{
+    text-align: center;
+    width: 200px;
+    margin:30px auto;
+}
+.rule .logo a{
+    text-decoration: none;
+    color: #333;
+}
+
+/*分享*/
+.share{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9999;
+    background-color: rgba(0,0,0,.7);
+    top: 0;
+    display: none;
+}
+
+
+/*奖品*/
+.prizelist{
+    width: 300px;
+    min-height: 310px;
+    position: fixed;
+    margin-left: -150px;
+    margin-top: -150px;
+    left: 50%;
+    top: 50%;
+    display: none;
+}
+.prizelist .prize .prize-body{
+    width: 266px;
+    min-height: 290px;
+    background-color: #fff;
+    border: 2px dashed #ff4747;
+    position: relative;
+}
+.prizelist .prize{
+    position: relative;
+    width: 270px;
+    min-height: 290px;
+    border-radius: 5px;
+    background-color: #a813df;
+    padding: 15px;
+}
+.prizelist .prize p.close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    line-height: 26px;
+    border-radius: 50%;
+    top: -12px;
+    left: -12px;
+    border: 2px solid #fff;
+    background-color: #ff4747;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+.prizelist .prize-body h2{
+    font-weight: 600;
+    color: #ff4800;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px 0 0 ;
+}
+
+.prizelist .prize-body p{
+    color: #333;
+    text-align: center;
+    font-weight: 600;
+    margin: 5px;
+}
+.prizelist .prize-body p:first-child{
+    font-size: 12px;
+}
+.prizelist .prize-body p:nth-child(2){
+    font-size: 16px;
+}
+.prizelist .prize-body p.prize-desc{
+    font-size: 24px;
+}
+.prizelist .prize-body p a{
+    display: inline-block;
+    background-color:#ff4800;
+    padding:10px 20px;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.prizelist .bg-shadow{
+    z-index: 0;
+    display: block;
+    background-color: rgba(0,0,0,.7);
+    top: 0;
+    left: 0;
+}
+
+/*广告植入*/
+.brandAdv{
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 99999;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.brandAdv .brandAdv-body{
+    width: 100%;
+    min-height:400px;
+    margin-top: 30px;
+    position: absolute;
+    z-index: 99999;
+}
+.brandAdv .bg-shadow{
+    z-index: 0;
+    display: block;
+    background-color: rgba(0,0,0,.9);
+    top: 0;
+    left: 0;
+}
+.brandAdv .close-btn{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 10%;
+    z-index: 99999;
+}
+
+/*按钮动画*/
+.rotate{
+    -webkit-animation-name: rotate;
+    animation-name: rotate;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    animation-delay:2s;
+    -webkit-animation-delay:2s;
+}
+
+@-webkit-keyframes rotate {
+    0% {
+        -webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+    }
+    20% {
+        -webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+    }
+    30% {
+        -webkit-transform:rotate(15deg);
+        transform: rotate(15deg);
+    }
+    40% {
+        -webkit-transform:rotate(-15deg);
+        transform: rotate(-15deg);
+    }
+    50% {
+        -webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform:rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+/*活动结束*/
+.check_runway .theEnd{
+    padding: 15px 0;
+    color: #f29400;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    border: 1px solid #f29400;
+    display: block;
+    margin-top: 10px;
+}
+
